@@ -1,88 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>APLLE TRAVEL NYC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Travel NYC</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>APLLE TRAVEL NYC</h1>
-    <nav>
-      <ul>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#passeios">Passeios</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="logo">🍏 Apple Travel NYC</h1>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Explore Nova York com Estilo</h2>
-      <p>Descubra os melhores passeios e experiências na Big Apple.</p>
-      <a href="#passeios" class="btn">Veja Nossos Passeios</a>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h2>Descubra Nova York com Estilo</h2>
+      <p>Guias exclusivos, roteiros incríveis e suporte premium em sua viagem dos sonhos.</p>
+      <a href="#servicos" class="btn">Ver pacotes</a>
+    </div>
+  </section>
 
-    <section id="quem-somos">
-      <h2>Quem Somos</h2>
-      <p>
-        APLLE TRAVEL NYC é uma agência especializada em turismo de luxo em Nova
-        York, oferecendo experiências exclusivas e personalizadas para nossos clientes.
-      </p>
-    </section>
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Quem somos</h2>
+      <p>A Apple Travel NYC é especializada em oferecer experiências inesquecíveis em Nova York. Conectamos cultura, conforto e atendimento de excelência.</p>
+    </div>
+  </section>
 
-    <section id="passeios">
-      <h2>Passeios</h2>
-      <div class="passeio">
-        <h3>Tour Clássico de Manhattan</h3>
-        <p>Explore os principais pontos turísticos de Manhattan com um guia especializado.</p>
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Nossos serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>City Tour Exclusivo</h3>
+          <p>Passeios personalizados pelos principais pontos turísticos de NYC.</p>
+        </div>
+        <div class="card">
+          <h3>Transporte VIP</h3>
+          <p>Serviço de transfer de alto padrão do aeroporto até o seu hotel.</p>
+        </div>
+        <div class="card">
+          <h3>Consultoria de Visto</h3>
+          <p>Suporte completo no processo de solicitação de visto americano.</p>
+        </div>
       </div>
-      <div class="passeio">
-        <h3>Cruzeiro ao Entardecer</h3>
-        <p>Desfrute de vistas deslumbrantes do skyline de Nova York durante um cruzeiro ao entardecer.</p>
-      </div>
-      <div class="passeio">
-        <h3>Tour Gastronômico</h3>
-        <p>Experimente a culinária local em um tour gastronômico pelos melhores restaurantes de Nova York.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="galeria">
-      <h2>Galeria</h2>
-      <div class="imagem">
-        <img src="imagem1.jpg" alt="Imagem 1" />
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <h2>Nova York em Destaque</h2>
+      <p>Veja um pouco da energia da cidade e sua beleza natural.</p>
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1549921296-3a4b79b802a7" alt="Times Square pela manhã">
+          <span>Times Square pela manhã</span>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1597752757690-89f66e9a209c" alt="Central Park no verão">
+          <span>Central Park no verão</span>
+        </div>
+        <div class="galeria-item">
+          <img src="https://img.freepik.com/fotos-gratis/central-park-em-manhattan-nova-york-um-enorme-e-belo-parque-rodeado-por-um-arranha-ceu-com-um-lago_181624-50335.jpg" alt="Brooklyn Bridge">
+          <span>Ponte do Brooklyn ao amanhecer</span>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1564769661140-2de6a2a7b7a5" alt="Vista urbana de Manhattan">
+          <span>Vista urbana de Manhattan</span>
+        </div>
       </div>
-      <div class="imagem">
-        <img src="imagem2.jpg" alt="Imagem 2" />
-      </div>
-      <div class="imagem">
-        <img src="imagem3.jpg" alt="Imagem 3" />
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco para mais informações e reservas.</p>
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Fale conosco</h2>
       <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 APLLE TRAVEL NYC. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Apple Travel NYC - Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
